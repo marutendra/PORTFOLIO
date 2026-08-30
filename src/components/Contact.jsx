@@ -79,9 +79,7 @@ export default function Contact() {
               <a href={`mailto:${profile.email}`} className="flex items-center gap-3 text-slate-300 hover:text-mint">
                 <Mail size={20} /> {profile.email}
               </a>
-              <a href={`tel:${profile.phone.replace(/\s/g, "")}`} className="flex items-center gap-3 text-slate-300 hover:text-mint">
-                <Phone size={20} /> {profile.phone}
-              </a>
+            
               <p className="flex items-center gap-3 text-slate-300">
                 <MapPin size={20} /> {profile.location}
               </p>
