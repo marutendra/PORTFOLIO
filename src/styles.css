@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #071014;
+}
+
+::selection {
+  background: rgba(65, 230, 167, 0.35);
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-5 py-20 sm:px-8 lg:px-10;
+}
+
+.section-label {
+  @apply mb-3 inline-flex items-center gap-2 rounded-full border border-line bg-panel px-3 py-1 font-mono text-xs font-medium uppercase tracking-wide text-mint;
+}
+
+.section-title {
+  @apply text-3xl font-bold tracking-normal text-white sm:text-4xl;
+}
+
+.section-copy {
+  @apply mt-4 max-w-3xl text-base leading-7 text-slate-300;
+}
+
+.surface {
+  @apply border border-line bg-panel/80 shadow-glow backdrop-blur;
+}
+
+.chip {
+  @apply rounded-full border border-line bg-ink/70 px-3 py-1 text-sm text-slate-300;
+}
+
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-mint focus:ring-offset-2 focus:ring-offset-ink;
+}
+@media (min-width: 768px) {
+  body {
+    cursor: none;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    cursor: none;
+  }
+}
