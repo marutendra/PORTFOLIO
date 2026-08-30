@@ -12,7 +12,6 @@ export const profile = {
   ],
   resumeUrl: "/Resume_2.pdf",
   email: "marutendrapratapsingh@gmail.com",
-  phone: "8957899163",
   location: "India",
   github: "https://github.com/marutendra",
   linkedin: "https://www.linkedin.com/in/marutendra-pratap-singh-greaternoida",
