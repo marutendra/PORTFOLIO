@@ -1,46 +1,34 @@
-# Marutendra Pratap Singh Portfolio
 
-A professional single-page developer portfolio built with React, JavaScript, Tailwind CSS, Framer Motion, and Lucide React icons.
+# Personal Developer Portfolio
 
-## Edit Your Content
+My personal developer portfolio showcasing my projects, technical skills, learning journey, resume, and contact information.
 
-Most future updates happen inside `src/data`:
+## Features
 
-- `profile.js`: name, intro, social links, contact info, resume path
-- `projects.js`: project cards and expanded project details
-- `learning.js`: learning timeline and accordion topics
-- `skills.js`: skill groups
-- `stats.js`: growth statistics
-- `currentlyLearning.js`: currently learning cards
+- Responsive and modern portfolio UI
+- Projects with detailed information
+- Skills and learning journey
+- Resume section
+- Contact form with email integration
+- GitHub and LinkedIn links
+- Custom cursor interaction
 
-## Install And Run
+## Tech Used
 
-```bash
-cd portfolio
-npm install
-npm run dev
-```
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React
 
-Open the local URL shown by Vite, usually `http://localhost:5173`.
+## Projects
 
-## Build For Production
+The portfolio showcases projects built using Java, Spring Boot, REST APIs, Spring Security, JWT, MongoDB, and other backend technologies.
 
-```bash
-npm run build
-```
+## Live Portfolio
 
-The production build is created in `dist`.
+Visit My Portfolio - https://marutendra.vercel.app/
 
-## Deploy To Vercel
 
-1. Push this folder to a GitHub repository.
-2. Go to [Vercel](https://vercel.com) and import the repository.
-3. Use these settings:
-   - Framework Preset: Vite
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-4. Click Deploy.
+Built with ❤️ while learning and building.
 
-## Resume File
-
-Place your resume PDF at `public/resume.pdf`. The download buttons already point there.
