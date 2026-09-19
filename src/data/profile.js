@@ -10,7 +10,7 @@ export const profile = {
     "Learning secure backend development",
     "Turning concepts into working projects",
   ],
-  resumeUrl: "/Resume_2.pdf",
+  resumeUrl: "/Marutendra_Pratap_Singh_Resume1.pdf",
   email: "marutendrapratapsingh@gmail.com",
   location: "India",
   github: "https://github.com/marutendra",
