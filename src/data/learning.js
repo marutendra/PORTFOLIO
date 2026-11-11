@@ -41,6 +41,37 @@ export const learningTopics = [
     ],
   },
   {
+  category: "Microservices",
+  summary: "Building distributed backend systems with independent services, service discovery, inter-service communication, and fault tolerance.",
+  topics: [
+    "Microservices Architecture",
+    "Service Decomposition",
+    "Spring Cloud",
+    "Netflix Eureka",
+    "Service Discovery",
+    "OpenFeign",
+    "Inter-Service Communication",
+    "API Gateway",
+    "Circuit Breaker",
+    "Resilience4j",
+    "Distributed Tracing"
+  ],
+},
+{
+  category: "Testing",
+  summary: "Backend application testing to ensure code reliability, correctness, and maintainability.",
+  topics: [
+    "Unit Testing",
+    "Integration Testing",
+    "JUnit 5",
+    "Mockito",
+    "Mocking and Stubbing",
+    "Assertions",
+    "Spring Boot Testing",
+    "MockMvc"
+  ],
+},
+  {
     category: "DataBases and Persistence",
     summary: "Learned database connectivity, CRUD operations, JDBC, Hibernate, JPA, Spring Data JPA, and MongoDB.",
     topics: [
