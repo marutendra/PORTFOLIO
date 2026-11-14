@@ -13,7 +13,7 @@ export default function Resume() {
 
         
           
-<div className="surface flex flex-col items-start justify-between gap-6 rounded-lg p-8 md:flex-row md:items-center">
+<div className="resume-card relative z-10 flex flex-col items-start justify-between gap-6 rounded-lg p-8 md:flex-row md:items-center">
  <div>
     <h3 className="text-2xl font-bold text-white ">
       Resume

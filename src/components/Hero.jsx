@@ -9,21 +9,21 @@ export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden border-b border-line">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(65,230,167,0.12),transparent_26%),radial-gradient(circle_at_80%_0%,rgba(68,199,244,0.11),transparent_24%)]" />
-      <div className="section-shell relative grid min-h-[calc(100vh-73px)] items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
+      <div className="section-shell relative grid items-center gap-8 lg:grid-cols-[1.2fr_0.8fr]">
         <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55 }}>
           <span className="section-label">Java Backend Developer</span>
-          <h1 className="mt-5 max-w-4xl text-4xl font-extrabold leading-tight text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mt-4 max-w-3xl text-3xl font-extrabold leading-tight text-white sm:text-4xl lg:text-5xl">
             {profile.name}
           </h1>
-          <p className="mt-5 max-w-3xl text-lg font-medium text-cyan sm:text-xl">{profile.subtitle}</p>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">{profile.intro}</p>
+          <p className="mt-4 max-w-3xl text-base font-medium text-cyan sm:text-lg">{profile.subtitle}</p>
+          <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">{profile.intro}</p>
 
           <div className="mt-7 min-h-8 font-mono text-sm text-mint sm:text-base">
             <span>{typedText}</span>
             <span className="ml-1 animate-pulse">|</span>
           </div>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
             <a
               href="#projects"
               className="focus-ring inline-flex items-center justify-center gap-2 rounded-md bg-mint px-5 py-3 text-sm font-bold text-ink transition hover:bg-cyan"

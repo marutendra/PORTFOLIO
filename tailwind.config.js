@@ -4,9 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: "#071014",
-        panel: "#0D171D",
-        line: "#1F313A",
+        // These three colors are CSS variables so the theme toggle can swap them.
+        ink: "rgb(var(--color-ink) / <alpha-value>)",
+        panel: "rgb(var(--color-panel) / <alpha-value>)",
+        line: "rgb(var(--color-line) / <alpha-value>)",
         mint: "#41E6A7",
         cyan: "#44C7F4",
         amber: "#F5B84B",

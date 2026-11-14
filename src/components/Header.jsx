@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
 import { useState } from "react";
 
 const navItems = [
@@ -9,12 +9,12 @@ const navItems = [
   { label: "Contact", href: "#contact" },
 ];
 
-export default function Header() {
+export default function Header({ theme, onThemeToggle }) {
   const [open, setOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-ink/88 backdrop-blur-xl">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
+      <nav className="mx-auto flex max-w-5xl items-center justify-between px-5 py-3 sm:px-8">
         <a href="#home" className="font-mono text-sm font-semibold text-white">
           MPS<span className="text-mint">.dev</span>
         </a>
@@ -27,14 +27,25 @@ export default function Header() {
           ))}
         </div>
 
-        <button
-          type="button"
-          onClick={() => setOpen((value) => !value)}
-          className="focus-ring inline-flex h-10 w-10 items-center justify-center rounded-md border border-line text-slate-200 md:hidden"
-          aria-label="Toggle navigation"
-        >
-          {open ? <X size={20} /> : <Menu size={20} />}
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={onThemeToggle}
+            className="focus-ring inline-flex h-9 w-9 items-center justify-center rounded-full border border-line text-slate-200 transition hover:text-mint"
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+          >
+            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
+          <button
+            type="button"
+            onClick={() => setOpen((value) => !value)}
+            className="focus-ring inline-flex h-9 w-9 items-center justify-center rounded-md border border-line text-slate-200 md:hidden"
+            aria-label="Toggle navigation"
+          >
+            {open ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
       </nav>
 
       {open && (
